@@ -1,0 +1,154 @@
+.content.grid {
+    padding: 0 50px 0 65px;
+    border-top: 1px solid var(--text-color);
+}
+
+.hotel__info {
+    padding: 40px 0 204px 0;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.hotel__address {
+    padding: 15px 0 10px;
+    font-size: 16px;
+}
+
+.hotel__title {
+    padding: 30px 0;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.hotel__desc {
+    padding: 10px 80px 0 0;
+    font-size: 17px;
+}
+
+.hotel__btn {
+    padding: 75px 0 120px;
+    border: none;
+    outline: none;
+    background-color: var(--white-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.hotel__btn__name {
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.hotel__btn__icon {
+    font-size: 20px;
+}
+
+.hotel__img {
+}
+
+.hotel__detail {
+    padding: 132px 0 139px;
+}
+
+.hotel__detail__title {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 0 135px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.hotel__detail__img__list {
+    padding-top: 88px;
+    margin: 0 -30px;
+    padding-left: 20px;
+}
+
+.hotel__detail__img__item {
+    padding: 0 30px;
+    object-fit: contain;
+}
+
+.hotel__detail__img__item.center {
+}
+
+.hotel__room {
+    padding: 122px 0 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel__room__title__item {
+    margin: 0 58px 0 15px;
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--text-color);
+    display: inline-block;
+}
+
+.hotel__room__list {
+    margin-top: 20px;
+}
+
+.hotel__room__item {
+    padding: 0 10px;
+}
+
+.hotel__room__img {
+    width: 100%;
+}
+
+.hotel__room__item__title {
+    margin: 10px 0;
+}
+
+.hotel__detail__more {
+    padding: 110px 0 140px;
+}
+
+.hotel__detail__more__title {
+    font-size: 54px;
+    font-weight: 400;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel__detail__more__title {
+    span {
+        color: #767c7f;
+    }
+}
+
+.hotel__detail__more__list {
+    padding-top: 75px;
+}
+
+.hotel__detail__more__item {
+    padding: 0px 10px 0 65px;
+}
+
+.hotel__detail__more__item + .hotel__detail__more__item {
+    display: flex;
+    flex-direction: column;
+    padding: 94px 65px 0 10px;
+}
+
+.hotel__detail__more__item__img {
+    padding: 0 144px 122px 0;
+    width: 100%;
+}
+
+.hotel__detail__more__item__img.right {
+    transform: scaleX(-1);
+}
+
+.hotel__detail__more__item__title__left {
+    padding-left: 144px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.hotel__detail__more__item__title__right {
+    padding: 0 144px 110px 0;
+    font-size: 14px;
+    line-height: 24px;
+}

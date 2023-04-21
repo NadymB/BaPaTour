@@ -1,0 +1,38 @@
+.wrapper {
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    padding: 50px 0 45px;
+}
+
+.heading {
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.heading.order {
+    order: 4;
+    text-align: right;
+}
+
+.title {
+    font-size: 12px;
+    order: 1;
+}
+
+.title.order {
+    order: 3;
+}
+
+.empty {
+    order: 2;
+}
+
+// MEDIA QUERY
+// MOBILE
+
+@media (max-width: 723px) {
+    .wrapper {
+        padding: 30px 0 0;
+    }
+}

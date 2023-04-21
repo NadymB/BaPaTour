@@ -1,0 +1,61 @@
+.wrapper {
+    width: 100%;
+}
+
+.card__img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card__title {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.card__icon {
+    font-size: 20px;
+}
+
+.card__icon.small {
+    font-size: 16px;
+}
+
+.card__title.small {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__price,
+.card__address {
+    font-size: 14px;
+}
+
+// MEDIA QUERY
+// MOBILE
+@media (max-width: 723px) {
+    .card__title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .card__icon {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 724px) and (max-width: 1023px) {
+    .card__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .card__icon {
+        font-size: 15px;
+    }
+}

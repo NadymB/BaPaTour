@@ -1,0 +1,168 @@
+.container {
+    border-top: 1px solid var(--text-color);
+}
+.branch {
+    padding: 12px 60px 91px;
+}
+
+.branch__heading {
+    width: 100%;
+}
+
+.favourite {
+    padding: 0 60px 60px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.favourite__title {
+    font-size: 20px;
+}
+
+.populated {
+    padding: 50px 60px 45px;
+}
+
+.journal.grid {
+    padding: 0 -10px;
+    padding: 50px 60px 60px;
+    background-color: #f9f5f1;
+}
+
+.journal__list {
+    padding: 0 45px;
+}
+
+.journal__item {
+    img {
+        margin-top: 0;
+        padding: 0 10px;
+    }
+}
+
+.journal__item.img-custom {
+    margin-bottom: 80px;
+    padding: 10px;
+}
+
+.journal__item.img-custom {
+    img {
+        max-height: 602px;
+    }
+}
+
+.team__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.team__info__heading {
+    font-size: 17px;
+    line-height: 25px;
+    width: 500px;
+}
+
+.team__info__social {
+    font-size: 20px;
+}
+
+.team__info__social-link + .team__info__social-link {
+    margin-left: 45px;
+}
+
+.team__branch {
+    margin: 280px 40px 60px;
+}
+
+.team__branch__heading {
+    font-size: 438px;
+    line-height: 310px;
+}
+
+// MEDIA QUERY
+// MOBILE & TABLE
+@media (max-width: 1023px) {
+    .journal__list {
+        padding: 0;
+    }
+    .journal__item {
+        img {
+            padding: 0;
+        }
+    }
+
+    .journal__item.img-custom {
+        padding: 0 10px;
+    }
+
+    .journal__item.img-custom {
+        img {
+            max-height: 330px;
+        }
+    }
+
+    .team__info__heading {
+        font-size: 16px;
+    }
+
+    .team__info__social-link {
+        font-size: 18px;
+    }
+}
+
+// MOBILE
+@media (max-width: 723px) {
+    .container {
+        margin: 0 15px;
+        padding: 0;
+    }
+    .branch {
+        padding: 25px 0 50px 0;
+    }
+
+    .favourite {
+        padding: 0;
+    }
+
+    .favourite__title {
+        font-size: 14px;
+    }
+
+    .populated {
+        padding: 0;
+    }
+
+    .journal.grid {
+        padding: 0;
+        padding: 0 0 30px;
+    }
+
+    .journal__item.img-custom {
+        img {
+            max-height: none;
+        }
+    }
+
+    .team__info {
+        flex-direction: column;
+        padding: 40px 0 0;
+    }
+
+    .team__info__heading {
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+
+// TABLET
+@media (min-width: 724px) and (max-width: 1023px) {
+    .team__info__social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team__info__social-link + .team__info__social-link {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
