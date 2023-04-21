@@ -2,9 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './HotelItem.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import StayCard from '../../../layout/StayCard/StayCard';
-import { faArrowRight, faBath, faBed, faHotel, faUserGroup } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { faBath, faBed, faHotel, faUserGroup } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 

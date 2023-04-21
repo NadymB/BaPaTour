@@ -30,7 +30,7 @@ function HotelItemDetail({
     return (
         <div className={cx('content', 'grid')}>
             <div className={cx('hotel__info', 'row')}>
-                <div className={cx('hotel__content', 'col-l-7')}>
+                <div className={cx('hotel__content', 'col-m-12 col-m-6 col-l-7')}>
                     <p className={cx('hotel__address')}>{address}</p>
                     <h2 className={cx('hotel__title')}>{name}</h2>
                     <p className={cx('hotel__desc')}>{description}</p>
@@ -39,14 +39,17 @@ function HotelItemDetail({
                         <FontAwesomeIcon className={cx('hotel__btn__icon')} icon={faArrowRight} />
                     </button>
                 </div>
-                <img className={cx('hotel__img', 'col-l-5')} src={mainImage} />
+                <img className={cx('hotel__img', 'col-m-12 col-m-6 col-l-5')} src={mainImage} />
             </div>
             <div className={cx('hotel__detail')}>
                 <p className={cx('hotel__detail__title')}>{hotelDetailTitle}</p>
                 <div className={cx('hotel__detail__img__list', 'row')}>
-                    <img className={cx('hotel__detail__img__item', 'col-l-4')} src={oneDetailImage} />
-                    <img className={cx('hotel__detail__img__item', 'center', 'col-l-4')} src={twoDetailImage} />
-                    <img className={cx('hotel__detail__img__item', 'col-l-4')} src={threeDetailImage} />
+                    <img className={cx('hotel__detail__img__item', 'col-12 col-m-4 col-l-4')} src={oneDetailImage} />
+                    <img
+                        className={cx('hotel__detail__img__item', 'center', 'col-12 col-m-4 col-l-4')}
+                        src={twoDetailImage}
+                    />
+                    <img className={cx('hotel__detail__img__item', 'col-12 col-m-4 col-l-4')} src={threeDetailImage} />
                 </div>
             </div>
             <div className={cx('hotel__room')}>
@@ -55,19 +58,19 @@ function HotelItemDetail({
                     <p className={cx('hotel__room__title__item')}>Villas</p>
                 </div>
                 <div className={cx('hotel__room__list', 'row')}>
-                    <div className={cx('hotel__room__item', 'col-l-3')}>
+                    <div className={cx('hotel__room__item', 'col-12 col-m-6 col-l-3')}>
                         <img className={cx('hotel__room__img')} src={oneRoomImage} />
                         <span className={cx('hotel__room__item__title')}>{firstRoomTitle}</span>
                     </div>
-                    <div className={cx('hotel__room__item', 'col-l-3')}>
+                    <div className={cx('hotel__room__item', 'col-12 col-m-6 col-l-3')}>
                         <img className={cx('hotel__room__img')} src={twoRoomImage} />
                         <span className={cx('hotel__room__item__title')}>{secondRoomTitle}</span>
                     </div>
-                    <div className={cx('hotel__room__item', 'col-l-3')}>
+                    <div className={cx('hotel__room__item', 'col-12 col-m-6 col-l-3')}>
                         <img className={cx('hotel__room__img')} src={threeRoomImage} />
                         <span className={cx('hotel__room__item__title')}>{thirdRoomTitle}</span>
                     </div>
-                    <div className={cx('hotel__room__item', 'col-l-3')}>
+                    <div className={cx('hotel__room__item', 'col-12 col-m-6 col-l-3')}>
                         <img className={cx('hotel__room__img')} src={fourRoomImage} />
                         <span className={cx('hotel__room__item__title')}>{fourthRoomTitle}</span>
                     </div>
@@ -79,11 +82,11 @@ function HotelItemDetail({
                     <span>What makes it Kobu</span>
                 </h4>
                 <div className={cx('hotel__detail__more__list', 'row')}>
-                    <div className={cx('hotel__detail__more__item', 'col-l-6')}>
+                    <div className={cx('hotel__detail__more__item', 'col-12 col-m-6 col-l-6')}>
                         <img className={cx('hotel__detail__more__item__img')} src={oneDetailMoreImage} />
                         <p className={cx('hotel__detail__more__item__title__left')}>{firstHotelDetailTitleMore}</p>
                     </div>
-                    <div className={cx('hotel__detail__more__item', 'col-l-6')}>
+                    <div className={cx('hotel__detail__more__item', 'col-12 col-m-6 col-l-6')}>
                         <p className={cx('hotel__detail__more__item__title__right')}>{secondHotelDetailTitleMore}</p>
                         <img className={cx('hotel__detail__more__item__img', 'right')} src={twoDetailMoreImage} />
                     </div>
