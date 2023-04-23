@@ -28,6 +28,7 @@ function ItemDetail() {
             fourthRoomTitle={hotelItem.fourthRoomTitle}
             firstHotelDetailTitleMore={hotelItem.firstHotelDetailTitleMore}
             secondHotelDetailTitleMore={hotelItem.secondHotelDetailTitleMore}
+            price={hotelItem.price}
         />
     );
 }

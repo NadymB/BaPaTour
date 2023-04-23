@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import AuthForm from '~/components/layout/AuthForm/AuthForm';
 import InputForm from '~/components/layout/InputForm/InputForm';
 
-console.log(document.getElementById('login__icon'));
-
 function Login() {
     const [email, setEmail] = useState('');
     const [pwd, setPwd] = useState('');
@@ -17,7 +15,7 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (usersdata === null) {
-            window.confirm('Bạn chưa có tài khoản, bạn có muốn đăng ký không?');
+            window.confirm("You don't have an account, do you want to register?");
             return navigate('/register');
         } else {
             usersdata.map((data) => {
@@ -37,16 +35,16 @@ function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 label="Email"
                 placeholder="abc@gmail.com"
-                errorMessage="Vui lòng nhập email"
-                // pattern={usersdata.map((data) => `${data.username}`)}
+                errorMessage="Please enter your email!"
+                required
             />
             <InputForm
                 value={pwd}
                 onChange={(e) => setPwd(e.target.value)}
                 label="Mật khẩu"
                 placeholder="abc123@"
-                errorMessage="Vui lòng nhập mật khẩu"
-                // pattern={usersdata.map((data) => `${data.password}`)}
+                errorMessage="Please enter a password!"
+                required
             />
             <span
                 style={{
