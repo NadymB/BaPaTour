@@ -28,8 +28,9 @@
     padding: 75px 0 120px;
     border: none;
     outline: none;
-    background-color: var(--white-color);
     font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .hotel__btn__name {
@@ -42,6 +43,7 @@
 }
 
 .hotel__img {
+    width: 100%;
 }
 
 .hotel__detail {
@@ -65,9 +67,6 @@
 .hotel__detail__img__item {
     padding: 0 30px;
     object-fit: contain;
-}
-
-.hotel__detail__img__item.center {
 }
 
 .hotel__room {

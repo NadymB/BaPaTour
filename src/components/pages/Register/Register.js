@@ -11,9 +11,7 @@ function Register() {
         confirmPassword: '',
     });
 
-    const [values, setValues] = useState(
-        JSON.parse(localStorage.getItem('data')) || [],
-    );
+    const [values, setValues] = useState(JSON.parse(localStorage.getItem('data')) || []);
 
     const navigate = useNavigate();
 
@@ -23,8 +21,8 @@ function Register() {
             name: 'username',
             type: 'text',
             placeholder: 'abc',
-            label: 'Tên đăng nhập',
-            errorMessage: 'Tên đăng nhập phải từ 3-16 ký tự',
+            label: 'Username:',
+            errorMessage: "Username should be 3-16 characters and shouldn't include any special character!",
             pattern: '^[A-Za-z0-9]{3,16}$',
             required: true,
         },
@@ -33,8 +31,8 @@ function Register() {
             name: 'email',
             type: 'email',
             placeholder: 'abc@gmail.com',
-            label: 'Email',
-            errorMessage: 'Email không hợp lệ',
+            label: 'Email:',
+            errorMessage: 'It should be a valid email address!',
             required: true,
         },
         {
@@ -42,9 +40,9 @@ function Register() {
             name: 'password',
             type: 'password',
             placeholder: 'abc123@',
-            label: 'Mật khẩu',
+            label: 'Password:',
             errorMessage:
-                'Mật khẩu phải có ít nhất 1 chữ, 1 số và 1 ký tự đặc biệt',
+                'Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!',
             pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
             required: true,
         },
@@ -53,8 +51,8 @@ function Register() {
             name: 'confirmPassword',
             type: 'password',
             placeholder: 'abc123@',
-            label: 'Nhập lại mật khẩu',
-            errorMessage: 'Mật khẩu không trùng khớp',
+            label: 'Confirm Password',
+            errorMessage: "Passwords don't match!",
             pattern: value.password,
             required: true,
         },
@@ -75,14 +73,9 @@ function Register() {
 
     return (
         <div className="register">
-            <AuthForm onSubmit={handleSubmit} title="Đăng ký" show={false}>
+            <AuthForm onSubmit={handleSubmit} title="Register" show={false}>
                 {inputs.map((input) => (
-                    <InputForm
-                        key={input.id}
-                        {...input}
-                        value={value[input.name]}
-                        onChange={handleChange}
-                    />
+                    <InputForm key={input.id} {...input} value={value[input.name]} onChange={handleChange} />
                 ))}
             </AuthForm>
         </div>
